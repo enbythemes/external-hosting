@@ -4,7 +4,7 @@ const btn = document.querySelector(".lightswitch");
 
 const currentTheme = localStorage.getItem("theme");
 if (currentTheme == "dark") {
-document.body.classList.add("night");
+document.body.classList.remove("night");
 }
 
 btn.addEventListener("click", function () {
