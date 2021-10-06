@@ -56,7 +56,7 @@ $(document).ready(flexFrame);
 
 // minimal soundcloud player © shythemes.tumblr
 $(document).ready(function(){
-var color = '#acd7bb'; // color of play button (hex)
+var color = '#f2f2f2'; // color of play button (hex)
 $('.soundcloud_audio_player').each(function(){
 $(this).attr({ src: $(this).attr('src').split('&')[0] + '&amp;liking=false&amp;sharing=false&amp;auto_play=false&amp;show_comments=false&amp;continuous_play=false&amp;buying=false&amp;show_playcount=false&amp;show_artwork=true&amp;origin=tumblr&amp;color=' + color.split('#')[1], height: 116, width: '100%' });
 });
