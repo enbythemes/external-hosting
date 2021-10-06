@@ -1,23 +1,3 @@
-// DARK MODE 
-window.addEventListener("DOMContentLoaded", function() {
-const btn = document.querySelector(".lightswitch");
-
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-document.body.classList.add("night");
-}
-
-btn.addEventListener("click", function () {
-document.body.classList.toggle("night");
-
-let theme = "light";
-if (document.body.classList.contains("night")) {
-theme = "dark";
-}
-localStorage.setItem("theme", theme);
-});
-});
-
 // PHOTOSET.CSS BY ANNASTHMS AND EGGDESIGN
 function gatherData(images, arr) {
 for (let i = 0; i < images.length; i++) {
