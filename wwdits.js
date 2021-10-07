@@ -41,3 +41,10 @@ $('.soundcloud_audio_player').each(function(){
 $(this).attr({ src: $(this).attr('src').split('&')[0] + '&amp;liking=false&amp;sharing=false&amp;auto_play=false&amp;show_comments=false&amp;continuous_play=false&amp;buying=false&amp;show_playcount=false&amp;show_artwork=true&amp;origin=tumblr&amp;color=' + color.split('#')[1], height: 116, width: '100%' });
 });
 });
+
+// TAGS ON CLICK
+$(document).ready(function(){
+$(".tags-icon").click(function(){
+$(this).parents(".posts").find(".tags").slideToggle(500);
+});
+});
