@@ -61,5 +61,3 @@ flexibleFrames($(".video"));
 }
 
 $(document).ready(flexFrame);
-
-feather.replace()
