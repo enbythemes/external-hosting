@@ -67,14 +67,3 @@ $('.soundcloud_audio_player').each(function(){
 $(this).attr({ src: $(this).attr('src').split('&')[0] + '&amp;liking=false&amp;sharing=false&amp;auto_play=false&amp;show_comments=false&amp;continuous_play=false&amp;buying=false&amp;show_playcount=false&amp;show_artwork=true&amp;origin=tumblr&amp;color=' + color.split('#')[1], height: 116, width: '100%' });
 });
 });
-
-// VIDEO RESIZE SCRIPT BY NOUVAE
-function flexFrame() {
-$(".caption").each(function() {
-$(this).find("iframe").wrap("<div class='capframe'></div>");
-flexibleFrames($(".capframe"));
-});
-flexibleFrames($(".video"));
-}
-
-$(document).ready(flexFrame);
