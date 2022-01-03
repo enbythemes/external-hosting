@@ -67,3 +67,10 @@ $('.soundcloud_audio_player').each(function(){
 $(this).attr({ src: $(this).attr('src').split('&')[0] + '&amp;liking=false&amp;sharing=false&amp;auto_play=false&amp;show_comments=false&amp;continuous_play=false&amp;buying=false&amp;show_playcount=false&amp;show_artwork=true&amp;origin=tumblr&amp;color=' + color.split('#')[1], height: 116, width: '100%' });
 });
 });
+
+// MOBILE NAVIGATION
+$(document).ready(function(){
+$('.links-click').click(function() {
+$('nav').slideToggle(500);
+});
+});
